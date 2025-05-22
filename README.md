@@ -1,2 +1,2 @@
 # it_family
-group of students who work to make the way easy 
+group of students who work to make the world easy 
