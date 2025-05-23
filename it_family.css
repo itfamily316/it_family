@@ -54,15 +54,14 @@ body {
 
 .nav-links {
   margin:0;
-  padding:0; 
-  left:5%; 
+  padding:0;  
   list-style: none;
   gap: 1.5rem;
 }
 li{
   display:inline ;
   margin-right: 20px;
-  padding-left: 10px;
+  left:10%; 
 }
 
 .nav-links a {
