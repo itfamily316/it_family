@@ -39,7 +39,7 @@ body {
 
 .nav-container {
   max-width: 1200px;
-  /*margin: auto;*/
+  left:5%; 
   display: flex;
   justify-content: space-between;
   /*align-items: center;*/
