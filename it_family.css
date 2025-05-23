@@ -42,8 +42,7 @@ body {
   left:5%; 
   display: flex;
   justify-content: space-between;
-  /*align-items: center;*/
-  text-align:center; 
+  align-items: center;
   padding: 0 2rem;
 }
 
@@ -56,6 +55,7 @@ body {
 .nav-links {
   margin:0;
   padding:0; 
+  left:5%; 
   list-style: none;
   gap: 1.5rem;
 }
