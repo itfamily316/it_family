@@ -1,4 +1,4 @@
-/*const newsContainer = document.getElementById('news-container');
+const newsContainer = document.getElementById('news-container');
 
 function loadNews(count = 6) {
   for (let i = 0; i < count; i++) {
@@ -14,11 +14,11 @@ function loadNews(count = 6) {
 
 window.addEventListener('DOMContentLoaded', () => {
   loadNews();
-});*/
+});
 const texts = ["سحر التكنولوجيا ", "عولمة لا محدودة", "إتصالات آمنة", "هندسة النظم"];
   let index = 0;
 
   setInterval(() => {
     index = (index + 1) % texts.length;
     document.getElementById("changing-text").textContent = texts[index];
-  }, 4000); // Change text every 2 seconds
+  }, 2000); // Change text every 2 seconds
