@@ -50,6 +50,7 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   color: #00c9a7;
+  text-align:center; 
 }
 
 .nav-links {
@@ -57,6 +58,7 @@ body {
   padding:0;  
   list-style: none;
   gap: 1.5rem;
+
 }
 li{
   display:inline ;
