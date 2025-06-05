@@ -71,9 +71,8 @@ video {
 }
 
 #welcome {
-  /*display: flex;*/
-/* position: absolute;*/
   margin: 0;
+  top:16px; 
   border-radius: 20px;
   font-family: 'Cairo', sans-serif;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -81,7 +80,7 @@ video {
   text-align: center;
   position: relative;
   width: 90%;
-  height: 90%;
+  height: 80%;
 }
 
 #welcome-content {
