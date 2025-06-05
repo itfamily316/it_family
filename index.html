@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css.css">
   <link rel="icon" href="logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">    
+ </script>
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -17,13 +22,13 @@
       <ul class="nav-links">
         <li onclick="home()"><a href="#main">الرئيسية</a></li>
         <li onclick="news()"><a href="#latest">آخر الاخبار</a></li>
-        <li onclick="media()"><a href="#">مواقع التواصل</a></li> 
+        <li ><a href="#">مواقع التواصل</a></li> 
       </ul>
     </div>
   </nav>
 
   <section id="home" class="section hero">
-    <h1 id="changing-text">إصنع المستحيل</h1>
+    <h3 id="changing-text">إصنع المستحيل</h3>
     <p>كل ما يخص قسم تقانة المعلومات و اهم المستجدات و المناقشات الهادفة</p>
   </section>
 <div id="main-page">
@@ -81,17 +86,42 @@
     <div id="new">أفادت جهات مقربة من الإدارة بيان قد يصدر في القريب الآجل بشأن موضوع الامتحانات المنعقدة في السادس من شهر مايو و أفاد المصدر بأن الادارة قد تصدر قرار تقر فيه بعض المعالجات لكلية علوم الحاسوب جميع الاقسام و الفرق</div>
     <h6>مصدر موثوق من داخل الادارة</h6>
   </section>--></div>
- <div id="overlay" id="confirmBox">
-  <div class="modal">
-    <h1>Oops!</h1>
-    <p>قيد التطوير،نرجو منك المحاولة لاحقًا</p>
-    <button class="btn-yes" onclick="confirmYes()">حسنا</button>
+<div id="overlay2">
+  <div id="welcome">
+    <h2 id="welcome-content">إلى عائلتي الحبيبة It-Family، دمتم ببهجة العيد وفرحته، وكل عام وأنتم في القلب أولًا وأبدًا.</h2>
+    <!--congratulations -->
+    <div class="flowers" id="flower-container"></div>
+    <canvas class="fireworks" id="fireworks"></canvas>
+    <div id="three-container"></div>
   </div>
 </div>
+<!-- congratulations -->
+<audio id="bg-music">
+  <source src="audio2.ogg" type="audio/ogg">
+</audio>  
+ <div id="overlay">
+  <div class="modal">
+    <h1 id="h1">🌙 عيد أضحى مبارك!</h1>
+    <p>تقبّل الله طاعتكم، وجعل أيامكم أفراحًا ومسرات 💛</p>
+    <button class="btn-celebrate" onclick="confirmYes()">🎉 شكراً</button>
+  </div>
+</div>
+<div id="eid-overlay" >
+  <div class="modal" id="eid-form">
+    <h2 id="h3">عيدية عيد الأضحى</h2>
+    <p id="p">تواصل مع الاهل و الاصحاب و ادخل السحب و كن انت الرابح🎁🔥</p>
+    <input type="text" id="name" placeholder="إسم المتسابق" required>
+    <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+    <input type="text" id="number" placeholder="رقم الهاتف" required>
+    <button onclick="sendEmail()">إرسال</button>
+    </div>
+  </div>
+   <div id="success-message">
+    <p id="in">✅ تم الإرسال! عيدكم مبارك 🌙</p>
+</div>    
   <footer class="footer">
     <p>&copy; 2025 It_Family. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
