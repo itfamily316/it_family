@@ -1,48 +1,184 @@
 #overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 999;
-      justify-content: center;
-      align-items: center;
-    }
+  display: none; /* was none before */
+  position: fixed;
+  font-family: 'Almarai', sans-serif;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
 
-    .modal {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-      width: 300px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
+.modal {
+  background: linear-gradient(to bottom right, #fffbe6, #fff);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Cairo', sans-serif;
+}
 
-    .modal h2 {
-      margin-top: 0;
-    }
+.modal #h1 {
+  margin-top: 0;
+  color: #a55eea;
+  font-size: 28px;
+}
 
-    .modal button {
-      padding: 10px 20px;
-      margin: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+.modal p {
+  color: #333;
+  font-size: 18px;
+  margin: 15px 0;
+}
 
-    .btn-yes {
-      background-color: #28a745;
-      color: white;
-    }
+.modal button.btn-celebrate {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 12px 25px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    .btn-no {
-      background-color: #dc3545;
-      color: white;
-    }
-    video{
-      position: relative;
-      width: 125%;
-      height: 300px;
-      border-radius: 10px;
-      left: 30px;
-    }
+.modal button.btn-celebrate:hover {
+  background-color: #218838;
+}
+
+video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#overlay2 {
+  display: none;
+/* position: fixed;*/
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome {
+  /*display: flex;*/
+/* position: absolute;*/
+  margin: 0;
+  border-radius: 20px;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: 90%;
+  height: 90%;
+}
+
+#welcome-content {
+  color: #ffe082;
+  font-size: 2em;
+  padding: 2rem;
+  animation: fadeIn 3s ease-in-out forwards;
+  text-shadow: 2px 2px 4px #000;
+  position: relative;
+  z-index: 10;
+}
+
+.flowers, .fireworks, #three-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.flower {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 10s linear infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/*winning offer */
+#eid-overlay{
+  display: none;
+  position: fixed;
+  top: 0px;
+  /*left: 10%;*/
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  /*border-radius: 12px;*/
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100%;
+  /*padding: 20px;*/
+  font-family: 'Cairo', sans-serif;
+  z-index: 9999;
+  backdrop-filter: blur(4px);    
+}
+#eid-form{
+  position: absolute;
+  top: 20%; 
+  right: 5%;
+  background: whitesmoke;
+}
+#h3{
+  margin: 0; 
+  color: #1e7e34;  
+}
+#p{
+  font-size: 14px; 
+  color: crimson;
+}
+#success-message{
+  position: absolute;
+  display: block;
+  left: 15%;
+  top:-99rem; 
+  transition-duration: 0.5s;
+  text-align: center;
+  background: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 70%;
+  font-family: 'Cairo', sans-serif;
+  z-index: 9999;    
+}
+#in{
+  color: #1e7e34; 
+  text-align: center; 
+  font-weight: bold; 
+  margin-top: 10px;  
+}
+button {
+  width: 100%; 
+  padding: 10px; 
+  background: #28a745; 
+  color: white; 
+  border: none; 
+  border-radius: 8px; 
+  margin-top: 8px; 
+  cursor: pointer;  
+}
+input {
+ width: 100%;
+ margin: 6px 0; 
+ padding: 8px; 
+ border-radius: 6px; 
+ border: 1px solid #ccc; 
+ text-align: right;   
+}
