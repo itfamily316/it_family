@@ -16,7 +16,7 @@ document.getElementById("news-page").style.display ="block";
 }
 function confirmYes() {
 document.getElementById("overlay").style.display="none"; 
-document.getElementById("overlay2").style.position ="fixed";
+document.getElementById("overlay2").style.display ="flex";
 const audio = 
 document.getElementById("bg-music");
 audio.play();   
