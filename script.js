@@ -126,31 +126,4 @@ window.addEventListener('load', function () {
       const email = document.getElementById("email").value.trim();
       const number = document.getElementById("number").value.trim();
 
-      if (!name || !email || !number) {
-        document.getElementById("success-message").innerHTML = "❌ يرجى تعبئة جميع الحقول.";
-        document.getElementById("success-message").style.top = "1px";
-        setTimeout(function () {
-          document.getElementById("success-message").style.top = "-99rem";
-        }, 1500);
-        return;
-      }
-
-      const templateParams = {
-        name,
-        email,
-        number
-      };
-
-      emailjs.send("service_9znmgq6", "template_u6b4n8f", templateParams)
-        .then(() => {
-          document.getElementById("success-message").innerHTML = "✅ تم الإرسال! عيدكم مبارك 🌙";
-          document.getElementById("success-message").style.top = "1px";
-          setTimeout(function () {
-                   document.getElementById("success-message").style.top = "-99rem";
-document.getElementById("eid-overlay").style.display = "none";                   
-          }, 2000);
-        }, (error) => {
-          alert("❌ حدث خطأ أثناء الإرسال: " + error.text);
-        });
-    };
-  });
+      
