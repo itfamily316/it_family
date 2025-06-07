@@ -117,13 +117,6 @@ function animateFireworks() {
 
 setInterval(createFirework, 1500);
 animateFireworks();
-//winning offer 
-window.addEventListener('load', function () {
-    emailjs.init("jZ3GDC23tdw7mpdJe");
 
-    window.sendEmail = function () {
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const number = document.getElementById("number").value.trim();
 
       
