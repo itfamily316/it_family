@@ -58,45 +58,6 @@ video {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-
-#welcome {
-  margin: 0;
-  top:16px; 
-  border-radius: 20px;
-  font-family: 'Cairo', sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  width: 90%;
-  height: 80%;
-}
-
-#welcome-content {
-  color: #ffe082;
-  font-size: 2em;
-  padding: 2rem;
-  animation: fadeIn 3s ease-in-out forwards;
-  text-shadow: 2px 2px 4px #000;
-  position: relative;
-  z-index: 10;
-}
-
-.flowers, .fireworks, #three-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.flower {
-  position: absolute;
-  font-size: 2rem;
-  animation: float 10s linear infinite;
-}
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(50px); }
   to { opacity: 1; transform: translateY(0); }
